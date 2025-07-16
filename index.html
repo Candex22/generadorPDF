@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Generador de Informe PDF - Grupo B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧡 Generador de Informe PDF 🧡</h1>
+            <p class="subtitle">Crea tu informe personalizado al instante</p>
+        </header>
+        
+        <div class="main-content">
+            <form id="reportForm" class="form-container">
+                <div class="form-group">
+                    <label for="name">👤 Nombre Completo:</label>
+                    <input type="text" id="name" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">📧 Correo Electrónico:</label>
+                    <input type="email" id="email" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">🎂 Edad:</label>
+                    <input type="number" id="age" placeholder="Tu edad" min="10" max="120" required>
+                </div>
+                <div class="form-group">
+                    <label for="project">🚀 Proyecto:</label>
+                    <input type="text" id="project" placeholder="Nombre de tu proyecto" required>
+                </div>
+                <div class="form-group">
+                    <label for="about">❔ Descripción del proyecto:</label>
+                    <input type="text" id="about" placeholder="Nombre de tu proyecto" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">📚 Curso:</label>
+                    <select id="course" required>
+                        <option value="">Selecciona tu curso</option>
+                        <option value="7° 2° B">7° 2° B</option>
+                        <option value="7° 2° A">7° 2° A</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">📅 Fecha de creación:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="button" onclick="generateReport()" class="generate-btn">
+                    📤 Generar Informe PDF
+                </button>
+            </form>
+            <div id="reportContainer" class="report-container"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
