@@ -151,7 +151,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ## 👨‍💻 Autor
 
 **Cande Molinari**
-- GitHub: [@tu-usuario](https://github.com/Candex22)
+- GitHub: [Candex22](https://github.com/Candex22)
 - Email: candemolinari20@gmail.com
 
 ## 📞 Soporte
